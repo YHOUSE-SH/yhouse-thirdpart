@@ -33,7 +33,7 @@ public class SignUtil {
         logger.debug("sign==>sort after:{}", toString(sortedMap));
 
         //拼接参数
-        String joinedSendInfo = joinIfNotNullKey(requests,secretKey);
+        String joinedSendInfo = joinIfNotNullKey(sortedMap,secretKey);
 
         logger.debug("sign==>join string:{}",joinedSendInfo);
 
